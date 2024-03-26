@@ -34,7 +34,7 @@ def main():
     # Home page
     if page == 'Home':
         st.header('**Welcome to VeriGuard, your personalized Text Classification and Twitter Fake Account App!**')
-        # st.image('1.jpeg', width=200)
+        st.image('1.jpeg', width=200)
         st.write('Explore VeriGuard')
         st.write('VeriGuard is your one-stop solution for text classification and Twitter fake news detection. Navigate through the sections below to discover its features:')
         st.write('***Home:*** Get started with an overview of VeriGuard.')
@@ -122,8 +122,8 @@ def main():
 # Function to predict label and probabilities for text classification
 def predict_label(text):
     # Load the saved model and vectorizer for text classification
-    text_model = joblib.load('/content/logistic_regression_model.pkl')
-    vectorizer = joblib.load('/content/tfidf_vectorizer.pkl')
+    text_model = joblib.load('logistic_regression_model.pkl')
+    vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
     # Vectorize the text
     text_vectorized = vectorizer.transform([text])
