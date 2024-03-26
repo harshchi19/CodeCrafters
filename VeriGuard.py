@@ -34,7 +34,7 @@ def main():
     # Home page
     if page == 'Home':
         st.header('**Welcome to VeriGuard, your personalized Text Classification and Twitter Fake Account App!**')
-        # st.image('/content/1.jpeg', width=200)
+        # st.image('1.jpeg', width=200)
         st.write('Explore VeriGuard')
         st.write('VeriGuard is your one-stop solution for text classification and Twitter fake news detection. Navigate through the sections below to discover its features:')
         st.write('***Home:*** Get started with an overview of VeriGuard.')
